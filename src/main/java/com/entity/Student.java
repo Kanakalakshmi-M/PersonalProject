@@ -16,8 +16,11 @@ public class Student {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
+
+    @Column(name = "given_name")
     private String name;
     private int age;
+    @Column(name = "email_Id")
     private String mailId;
     private String address;
 
